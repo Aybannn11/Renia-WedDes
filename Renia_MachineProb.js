@@ -15,7 +15,7 @@ function animateBox(day, color) {
         newBox.style.backgroundColor = color;
         newBox.style.borderColor = color;
         newBox.innerText = day;
-    }, 500); 
+    }, 500);
 
     isSwapped = !isSwapped;
 }
