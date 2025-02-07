@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekday Animation</title>
+    <title>Animated Days</title>
     <link rel="stylesheet" href="Renia_MachineProb.css">
 </head>
-
 <body>
-
-<div class="container">
-    <div class="buttons">
-        <button onclick="animateBox('Monday')">Monday</button>
-        <button onclick="animateBox('Tuesday')">Tuesday</button>
-        <button onclick="animateBox('Wednesday')">Wednesday</button>
-        <button onclick="animateBox('Thursday')">Thursday</button>
-        <button onclick="animateBox('Friday')">Friday</button>
-        <button onclick="animateBox('Saturday')">Saturday</button>
-        <button onclick="animateBox('Sunday')">Sunday</button>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="animateBox('Monday', '#6a0dad')">Monday</button>
+            <button onclick="animateBox('Tuesday', '#f4cccc')">Tuesday</button>
+            <button onclick="animateBox('Wednesday', '#0000ff')">Wednesday</button>
+            <button onclick="animateBox('Thursday', '#00ff00')">Thursday</button>
+            <button onclick="animateBox('Friday', '#ffff00')">Friday</button>
+            <button onclick="animateBox('Saturday', '#ff9900')">Saturday</button>
+            <button onclick="animateBox('Sunday', '#ff0000')">Sunday</button>
+        </div>
+    
+        <div class="box-container">
+            <div id="previousBox" class="box"></div>
+            <div id="currentBox" class="box"></div>
+        </div>
     </div>
-</div>
-
-    <div class="box-container">
-        <div id="animatedBox" class="box"></div>
-    </div>
-</div>
-
+    
     <script src="Renia_MachineProb.js"></script>
-
 </body>
-
 </html>
